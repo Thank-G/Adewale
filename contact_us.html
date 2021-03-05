@@ -378,12 +378,12 @@
           var message = document.getElementById('message').value
 
           Email.send({
-            SecureToken: '5fa6fa09-5201-4195-b2cb-a511d7d0fdd8',
-            To: 'bereonwuthankgod@gmail.com',
-            From: 'bereonwuthankgod@gmail.com',
-            Subject: 'Enquiry form Website',
-            Body: `<h4>Hello there, </h4> <p>You have a message from: ${email}</p> <br/> <b>USER DETAILS:</b> <br/> <p>Name: ${name}</p> <p>Phone: ${phone}</p> <p>Email: ${email}</p> <br/> <p><b>MESSAGE:</b> </p> <p> ${message} </p>`,
-          })
+              SecureToken: '5fa6fa09-5201-4195-b2cb-a511d7d0fdd8',
+              To: 'bereonwuthankgod@gmail.com',
+              From: 'bereonwuthankgod@gmail.com',
+              Subject: 'ENQUIRY FROM ADEWALE & ADEWALE WEBSITE',
+            Body: `<h4>Hello there, </h4> <p>You have received a new mail from <b>${name}</b> who just visited your website</p><br/> <b>HERE ARE THE DETAILS:</b> <br/><p>NAME: <b>${name}</b></p> <p>EMAIL: <b>${email}</b></p> <p>PHONE: <b>${phone}</b></p> <br/> <p><b>MESSAGE:</b> </p> <p> <b>${message}</b> </p>`,
+            })
             .then(function (message) {
               alert(
                 "We acknowledge your message, And we'll get back to you shortly!",
